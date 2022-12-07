@@ -20,3 +20,5 @@ brain-progression:
 	poetry run brain-progression
 brain-prime:
 	poetry run brain-prime
+redo:
+	pip install --user --force-reinstall dist/*.whl

@@ -1,11 +1,9 @@
+from brain_games.games.brain_games import hello, try_again, win
 from random import randint
-import prompt
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print("Hello, " + name + "!")
+    hello()
     print("What is the result of the expression?")
     first_sum = randint(1, 100)
     second_sum = randint(1, 100)
@@ -22,18 +20,27 @@ def main():
         differ = input()
         print(f"Your answer: {differ}")
         if first_dif - second_dif == int(differ):
+
             print("Correct!")
             print(f"Question: {first_tim} * {second_tim}")
             time = input()
             print(f"Your answer: {time}")
             if first_tim * second_tim == int(time):
                 print("Correct!")
-                print(f"Congratulations, {name}!")
+                win()
             else:
-                print(f"'{time}' is wrong answer ;(. Correct answer was '{first_tim * second_tim}'.")
+                print(f"'{time}' is wrong answer ;(."
+                      f"Correct answer was '{first_tim * second_tim}'.")
+                try_again()
         else:
-            print(f"'{differ}' is wrong answer ;(. Correct answer was '{first_dif - second_dif}'.")
+            print(f"'{differ}' is wrong answer ;(."
+                  f"Correct answer was '{first_dif - second_dif}'.")
+            try_again()
     else:
-        print(f"'{summary}' is wrong answer ;(. Correct answer was '{second_sum + first_sum}'.")
+        print(f"'{summary}' is wrong answer ;(."
+              f"Correct answer was '{second_sum + first_sum}'.")
+        try_again()
 
 
+if __name__ == '__main__':
+    main()

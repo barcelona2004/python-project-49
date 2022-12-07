@@ -1,5 +1,5 @@
+from brain_games.games.brain_games import hello, try_again, win
 from random import randint
-import prompt
 
 
 def is_prime(x):
@@ -7,9 +7,7 @@ def is_prime(x):
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print("Hello, " + name + "!")
+    hello()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     count = 0
     for _ in range(3):
@@ -18,21 +16,26 @@ def main():
         answer = input()
         print(f"Your answer: {answer}")
         if answer == 'yes' or answer == 'no':
-            if is_prime(x) and answer == 'yes':
-                print("Correct!")
-            elif not is_prime(x) and answer == 'no':
+            if (is_prime(x) and answer == 'yes') or \
+                    (not is_prime(x) and answer == 'no'):
                 print("Correct!")
             elif is_prime(x) and answer == 'no':
-                print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-                print(f"Let's try again {name}")
+                print("'no' is wrong answer ;(."
+                      "Correct answer was 'yes'.")
+                try_again()
                 break
             else:
-                print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-                print(f"Let's try again {name}")
+                print("'yes' is wrong answer ;(."
+                      "Correct answer was 'no'.")
+                try_again()
                 break
         else:
-            print(f"Let's try again {name}")
+            try_again()
             break
         count += 1
     if count == 3:
-        print(f"Congratulations, {name}!")
+        win()
+
+
+if __name__ == "__main__":
+    main()

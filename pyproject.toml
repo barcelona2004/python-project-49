@@ -1,22 +1,23 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "A game for your brain"
 authors = ["Gordt Maxim <barcelona200418@yandex.ru>"]
 readme = "README.md"
 packages = [{ include = "brain_games"},]
+repository = "https://github.com/barcelona2004/python-project-49"
 
 [tool.poetry.dependencies]
 python = "^3.8.10"
 prompt = "^0.4.1"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.scripts.brain_even:main"
-brain-calc = "brain_games.scripts.brain_calc:main"
-brain-gcd = "brain_games.scripts.brain_gcd:main"
-brain-progression = "brain_games.scripts.brain_progression:main"
-brain-prime = "brain_games.scripts.brain_prime:main"
+brain-games = "brain_games.games.brain_games:main"
+brain-even = "brain_games.games.brain_even:main"
+brain-calc = "brain_games.games.brain_calc:main"
+brain-gcd = "brain_games.games.brain_gcd:main"
+brain-progression = "brain_games.games.brain_progression:main"
+brain-prime = "brain_games.games.brain_prime:main"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "6.0.0"
