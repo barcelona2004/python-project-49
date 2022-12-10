@@ -9,23 +9,23 @@ def main():
     for i in range(3):
         random_number = randint(1, 100)
         print("Question: " + str(random_number))
-        x = input()
-        print("Your answer: " + x)
-        if x != 'yes' and x != 'no':
+        answer = input()
+        print("Your answer: " + answer)
+        if answer != 'yes' and answer != 'no':
             try_again()
-            break
+            return 0
         else:
-            if (random_number % 2 == 0 and x == 'yes') or \
-                    (random_number % 2 != 0 and x == 'no'):
+            if (random_number % 2 == 0 and answer == 'yes') or \
+                    (random_number % 2 != 0 and answer == 'no'):
                 print("Correct!")
-            elif random_number % 2 == 0 and x == 'no':
+            elif random_number % 2 == 0 and answer == 'no':
                 print("'no' is wrong answer ;(. Correct answer was 'yes'.")
                 try_again()
-                break
+                return 0
             else:
                 print("'yes' is wrong answer ;(. Correct answer was 'no'.")
                 try_again()
-                break
+                return 0
         count += 1
     if count == 3:
         win()
