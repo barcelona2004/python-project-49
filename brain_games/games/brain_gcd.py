@@ -9,6 +9,7 @@ def gcd(number1, number2):
             max_num = max(max_num, i)
     return max_num
 
+
 def main():
     hello()
     print("Find the greatest common divisor of given numbers.")

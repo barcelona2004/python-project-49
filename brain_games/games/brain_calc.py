@@ -32,7 +32,6 @@ def calc_time(first_tim, second_tim, time):
         try_again()
 
 
-
 def main():
     hello()
     print("What is the result of the expression?")
@@ -45,7 +44,7 @@ def main():
     print(f"Question: {first_sum} + {second_sum}")
     summary = input()
     print(f"Your answer: {summary}")
-    calc_sum(first_sum, second_sum, summary) 
+    calc_sum(first_sum, second_sum, summary)
     print(f"Question: {first_dif} - {second_dif}")
     differ = input()
     print(f"Your answer: {differ}")
