@@ -1,6 +1,5 @@
-#from brain_games.games.brain_games import hello, try_again, win
+from brain_games.games.brain_games import hello, try_again, win
 from random import randint
-from brain_games import *
 
 
 def calc_sum(first_sum, second_sum, summary):
