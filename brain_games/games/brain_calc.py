@@ -22,14 +22,8 @@ def main():
     random_tim2 = randint(1, 100)
     if is_right_summ(random_summ1, random_summ2):
         result_summ = 'yes'
-    else:
-        result_summ = 'no'
     if is_right_diff(random_diff1, random_diff2):
         result_diff = 'yes'
-    else:
-        result_diff = 'no'
     if is_right_time(random_tim1, random_tim2):
         result_time = 'yes'
-    else:
-        result_time = 'no'
     return result_summ, result_diff, result_time

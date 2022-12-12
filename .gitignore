@@ -1,0 +1,4 @@
+dist
+.pyproject.toml.swo
+.pyproject.toml.swp
+__pycache__

@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{ include = "brain_games"},]
 repository = "https://github.com/barcelona2004/python-project-49"
 classifiers = [
-	"Programming Language :: Python :: 3"
+	"Programming Language :: Python :: 3.8.10" 
 ]
 
 [tool.poetry.dependencies]
@@ -15,12 +15,12 @@ python = "^3.8.10"
 prompt = "^0.4.1"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.games.brain_games:hello"
-brain-even = "brain_games.games.brain_even:main"
-brain-calc = "brain_games.games.brain_calc:main"
-brain-gcd = "brain_games.games.brain_gcd:main"
-brain-progression = "brain_games.games.brain_progression:main"
-brain-prime = "brain_games.games.brain_prime:main"
+brain-games = "brain_games.scripts.brain_games:hello"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scritps.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "6.0.0"
