@@ -9,6 +9,6 @@ def main():
     random_number = randint(1, 1000)
     if is_even(random_number):
         result = 'yes'
-    else
+    else:
         result = 'no'
     return random_number, result

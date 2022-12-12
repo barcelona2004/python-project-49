@@ -20,10 +20,10 @@ def main():
     random_diff2 = randint(1, 100)
     random_tim1 = randint(1, 100)
     random_tim2 = randint(1, 100)
-    if is_right_summ(random_summ1, random_summ2):
+    if is_right_sum(random_summ1, random_summ2):
         result_summ = 'yes'
-    if is_right_diff(random_diff1, random_diff2):
+    if is_right_dif(random_diff1, random_diff2):
         result_diff = 'yes'
-    if is_right_time(random_tim1, random_tim2):
+    if is_right_times(random_tim1, random_tim2):
         result_time = 'yes'
     return result_summ, result_diff, result_time
