@@ -1,59 +1,35 @@
-from brain_games.games.brain_games import hello, try_again, win
 from random import randint
 
 
-def calc_sum(first_sum, second_sum, summary):
-    if first_sum + second_sum == int(summary):
-        print("Correct!")
-    else:
-        print(f"'{summary}' is wrong answer ;(."
-              f"Correct answer was '{second_sum + first_sum}'.")
-        try_again()
-        exit(0)
+def is_right_sum(number1, number2):
+    return number1 + number2
 
 
-def calc_diff(first_dif, second_dif, differ):
-    if first_dif - second_dif == int(differ):
-        print("Correct!")
-    else:
-        print(f"'{differ}' is wrong answer ;(."
-              f"Correct answer was '{first_dif - second_dif}'.")
-        try_again()
-        exit(0)
+def is_right_dif(number1, number2, diff):
+    return number1 - number2 == diff
 
 
-def calc_time(first_tim, second_tim, time):
-    if first_tim * second_tim == int(time):
-        print("Correct!")
-        win()
-    else:
-        print(f"'{time}' is wrong answer ;(."
-              f"Correct answer was '{first_tim * second_tim}'.")
-        try_again()
+def is_right_times(number1, number2, time):
+    return number1 * number2 == time
 
 
 def main():
-    hello()
-    print("What is the result of the expression?")
-    first_sum = randint(1, 100)
-    second_sum = randint(1, 100)
-    first_dif = randint(1, 100)
-    second_dif = randint(1, 100)
-    first_tim = randint(1, 100)
-    second_tim = randint(1, 100)
-    print(f"Question: {first_sum} + {second_sum}")
-    summary = input()
-    print(f"Your answer: {summary}")
-    calc_sum(first_sum, second_sum, summary)
-    print(f"Question: {first_dif} - {second_dif}")
-    differ = input()
-    print(f"Your answer: {differ}")
-    calc_diff(first_dif, second_dif, differ)
-    print(f"Question: {first_tim} * {second_tim}")
-    time = input()
-    print(f"Your answer: {time}")
-    calc_time(first_tim, second_tim, time)
-
-
-if __name__ == '__main__':
-    main()
+    random_summ1 = randint(1, 100)
+    random_summ2 = randint(1, 100)
+    random_diff1 = randint(1, 100)
+    random_diff2 = randint(1, 100)
+    random_tim1 = randint(1, 100)
+    random_tim2 = randint(1, 100)
+    if is_right_summ(random_summ1, random_summ2):
+        result_summ = 'yes'
+    else:
+        result_summ = 'no'
+    if is_right_diff(random_diff1, random_diff2):
+        result_diff = 'yes'
+    else:
+        result_diff = 'no'
+    if is_right_time(random_tim1, random_tim2):
+        result_time = 'yes'
+    else:
+        result_time = 'no'
+    return result_summ, result_diff, result_time
