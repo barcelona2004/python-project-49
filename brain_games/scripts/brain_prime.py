@@ -1,5 +1,5 @@
 from brain_games.game_starter import hello, try_again, win
-from brain_games.games.brain_prime import get_game_prime, is_prime
+from brain_games.games.brain_prime import get_game_prime
 
 
 def is_correct_answer(answer, correct_answer):

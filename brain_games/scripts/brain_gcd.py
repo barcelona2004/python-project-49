@@ -1,5 +1,5 @@
 from brain_games.game_starter import hello, try_again, win
-from brain_games.games.brain_gcd import max_gcd, get_game_gcd
+from brain_games.games.brain_gcd import get_game_gcd
 
 
 def main():

@@ -1,6 +1,5 @@
 from brain_games.game_starter import hello, try_again, win
 from brain_games.games.brain_progression import get_game_progression
-from brain_games.games.brain_progression import build_progression
 
 
 def main():
