@@ -2,7 +2,7 @@ from random import randint
 
 
 def build_progression(d, num):
-    count = 0
+    count, result = 0, 0
     lst = []
     for elem in range(1, d * 10 + 1, d):
         if count == num:
