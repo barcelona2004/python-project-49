@@ -18,7 +18,7 @@ def main():
             print(f"'{answer}' is wrong answer ;(."
                   f"Correct answer was '{result}'.")
             try_again()
-            break
+            exit(0)
     if count == 3:
         win()
 
