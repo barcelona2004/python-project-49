@@ -1,19 +1,17 @@
 from random import randint
 
 
-def is_gcd(number1, number2):
+def max_gcd(num1, num2):
     max_num = 0
-    for i in range(1, min(number1, number2) + 1):
-        if number2 % i == 0 and number1 % i == 0:
+    for i in range(1, min(num1, num2) + 1):
+        if num2 % i == 0 and num1 % i == 0:
             max_num = max(max_num, i)
     return max_num
 
 
-def main():
-    random_number1 = randint(1, 100)
-    random_number2 = randint(1, 100)
-    if is_gcd(random_number1, random_number2):
-        result = 'yes'
-    else:
-        result = 'no'
-    return result
+def get_game_gcd():
+    random_num1 = randint(1, 100)
+    random_num2 = randint(1, 100)
+    result = max_gcd(random_num1, random_num2)
+    line = f"Question: {random_num1} {random_num2}"
+    return line, result

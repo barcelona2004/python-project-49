@@ -1,29 +1,20 @@
-from random import randint
+from random import randint, choice
 
 
-def is_right_sum(number1, number2):
-    return number1 + number2
+def calculate(num1, num2, operator):
+    if operator == '*':
+        return num1 * num2
+    if operator == '+':
+        return num1 + num2
+    if operator == '-':
+        return num1 - num2
 
 
-def is_right_dif(number1, number2, diff):
-    return number1 - number2 == diff
-
-
-def is_right_times(number1, number2, time):
-    return number1 * number2 == time
-
-
-def main():
-    random_summ1 = randint(1, 100)
-    random_summ2 = randint(1, 100)
-    random_diff1 = randint(1, 100)
-    random_diff2 = randint(1, 100)
-    random_tim1 = randint(1, 100)
-    random_tim2 = randint(1, 100)
-    if is_right_sum(random_summ1, random_summ2):
-        result_summ = 'yes'
-    if is_right_dif(random_diff1, random_diff2):
-        result_diff = 'yes'
-    if is_right_times(random_tim1, random_tim2):
-        result_time = 'yes'
-    return result_summ, result_diff, result_time
+def get_game_calc():
+    lst = ['+', '-', '*']
+    random_operator = choice(lst)
+    random_num1 = randint(1, 100)
+    random_num2 = randint(1, 100)
+    line = f"Question: {random_num1} {random_operator} {random_num2}"
+    result = calculate(random_num1, random_num2, random_operator)
+    return line, result, random_operator, random_num1, random_num2

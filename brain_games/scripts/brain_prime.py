@@ -1,12 +1,5 @@
 from brain_games.game_starter import hello, try_again, win
-from random import randint
-
-
-def is_prime(number):
-    for i in range(2, round(number ** 0.5) + 1):
-        if number % i == 0:
-            return 'no'
-    return 'yes'
+from brain_games.games.brain_prime import get_game_prime, is_prime
 
 
 def is_correct_answer(answer, correct_answer):
@@ -24,16 +17,15 @@ def main():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     count = 0
     for _ in range(3):
-        random_number = randint(1, 1000)
-        correct_answer = is_prime(random_number)
-        print(f"Question: {random_number}")
+        line, result = get_game_prime()
+        print(line)
         answer = input()
         print(f"Your answer: {answer}")
         if answer != 'yes' and answer != 'no':
             try_again()
             return 0
         else:
-            is_correct_answer(answer, correct_answer)
+            is_correct_answer(answer, result)
         count += 1
     if count == 3:
         win()

@@ -1,7 +1,7 @@
 from random import randint
 
 
-def nums(d, num):
+def build_progression(d, num):
     x, k = 0, 0
     lst = []
     for i in range(1, d * 10 + 1, d):
@@ -10,19 +10,18 @@ def nums(d, num):
             x = k - 1
         else:
             lst.append(str(i))
-            k += 1
-            line = ""
+        k += 1
+    line = ""
     for j in lst:
         line += j
         line += ' '
     return line, lst, x
 
 
-def main():
+def get_game_progression():
     d = randint(1, 10)
     num = randint(1, 10)
-    line, lst, x = nums(d, num)
-    if lst[x] + d:
-        return 'yes'
-    else:
-        return 'no'
+    line, lst, x = build_progression(d, num)
+    result = int(lst[x]) + d
+    line = f"Question: {line}"
+    return line, result
