@@ -2,26 +2,25 @@ from random import randint
 
 
 def build_progression(d, num):
-    x, k = 0, 0
+    count = 0
     lst = []
-    for i in range(1, d * 10 + 1, d):
-        if k == num:
+    for elem in range(1, d * 10 + 1, d):
+        if count == num:
             lst.append('..')
-            x = k - 1
-            result = i
+            result = elem
         else:
-            lst.append(str(i))
-        k += 1
+            lst.append(str(elem))
+        count += 1
     line = ""
-    for j in lst:
-        line += j
+    for elem in lst:
+        line += elem
         line += ' '
-    return line, lst, x, result
+    return line, lst, result
 
 
 def get_game_progression():
     d = randint(1, 10)
     num = randint(1, 10)
-    line, lst, x, result = build_progression(d, num)
+    line, lst, result = build_progression(d, num)
     line = f"Question: {line}"
     return line, result
