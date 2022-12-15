@@ -15,4 +15,4 @@ def get_game_gcd():
     random_num2 = randint(1, 100)
     result = max_gcd(random_num1, random_num2)
     question = f"Question: {random_num1} {random_num2}"
-    return question, result
+    return question, result, variants
