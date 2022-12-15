@@ -12,7 +12,7 @@ def starter(function):
         question, result, variants_none = function()
         print(question)
         answer = prompt.string('Your answer: ')
-        if answer == str(result):
+        if str(answer) == str(result):
             print('Correct!')
             count += 1
         else:
