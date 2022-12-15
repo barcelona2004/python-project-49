@@ -10,6 +10,7 @@ def max_gcd(num1, num2):
 
 
 def get_game_gcd():
+    variants = 'Find the greatest common divisor of given numbers.'
     random_num1 = randint(1, 100)
     random_num2 = randint(1, 100)
     result = max_gcd(random_num1, random_num2)

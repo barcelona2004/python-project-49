@@ -9,7 +9,8 @@ def is_prime(number):
 
 
 def get_game_prime():
+    variants = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     random_num = randint(1, 1000)
     result = is_prime(random_num)
     question = f"Question: {random_num}"
-    return question, result
+    return question, result, variants

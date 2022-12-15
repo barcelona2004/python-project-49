@@ -19,6 +19,7 @@ def create_progression(step, num):
 
 
 def get_game_progression():
+    variants = 'What number is missing in the progression?'
     step = randint(1, 10)
     num = randint(1, 10)
     line, lst, result = create_progression(step, num)
