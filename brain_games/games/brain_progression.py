@@ -24,4 +24,4 @@ def get_game_progression():
     num = randint(1, 10)
     line, lst, result = create_progression(step, num)
     question = f"Question: {line}"
-    return question, result
+    return question, result, variants
