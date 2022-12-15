@@ -13,5 +13,5 @@ def get_game_gcd():
     random_num1 = randint(1, 100)
     random_num2 = randint(1, 100)
     result = max_gcd(random_num1, random_num2)
-    line = f"Question: {random_num1} {random_num2}"
-    return line, result
+    question = f"Question: {random_num1} {random_num2}"
+    return question, result

@@ -10,9 +10,9 @@ Makefile commands:
 	brain-name - run game
 	lint - show linter mistakes 		
 
-how to install package - [![asciicast](https://asciinema.org/a/Bf6yaRclezcZQfStvLClUlRCr.svg)](https://asciinema.org/a/Bf6yaRclezcZQfStvLClUlRCr)
-brain-even. In this game you have to figure out is number even or not - [![asciicast](https://asciinema.org/a/9XaQsl9Fx861dqCVWeJu2VRa7.svg)](https://asciinema.org/a/9XaQsl9Fx861dqCVWeJu2VRa7)
-brain-calc. In this game you have to calculate the meaning of an expression - [![asciicast](https://asciinema.org/a/JgXItVb02uSiq2KnSAtT3WrPZ.svg)](https://asciinema.org/a/JgXItVb02uSiq2KnSAtT3WrPZ)
-brain-gcd. In this game you have to figure out the greatest greatest common divisor - [![asciicast](https://asciinema.org/a/XLEZJHAm84PRNz0va6Y23YJT5.svg)](https://asciinema.org/a/XLEZJHAm84PRNz0va6Y23YJT5)
-brain-progression. In this game you have to figure out what number is missing in arithmetic progression - [![asciicast](https://asciinema.org/a/AmtWJKL9f4Yrg1MKr1BjFw5TG.svg)](https://asciinema.org/a/AmtWJKL9f4Yrg1MKr1BjFw5TG)
-brain-prime. In this game you have to figure out is number prime or not - [![asciicast](https://asciinema.org/a/U9yewbTyVv90yceabPZv7KF4d.svg)](https://asciinema.org/a/U9yewbTyVv90yceabPZv7KF4d
+how to install package [![asciicast](https://asciinema.org/a/Bf6yaRclezcZQfStvLClUlRCr.svg)](https://asciinema.org/a/Bf6yaRclezcZQfStvLClUlRCr)
+brain-even. In this game you have to figure out is number even or not [![asciicast](https://asciinema.org/a/9XaQsl9Fx861dqCVWeJu2VRa7.svg)](https://asciinema.org/a/9XaQsl9Fx861dqCVWeJu2VRa7)
+brain-calc. In this game you have to calculate the meaning of an expression [![asciicast](https://asciinema.org/a/JgXItVb02uSiq2KnSAtT3WrPZ.svg)](https://asciinema.org/a/JgXItVb02uSiq2KnSAtT3WrPZ)
+brain-gcd. In this game you have to figure out the greatest greatest common divisor [![asciicast](https://asciinema.org/a/XLEZJHAm84PRNz0va6Y23YJT5.svg)](https://asciinema.org/a/XLEZJHAm84PRNz0va6Y23YJT5)
+brain-progression. In this game you have to figure out what number is missing in arithmetic progression [![asciicast](https://asciinema.org/a/AmtWJKL9f4Yrg1MKr1BjFw5TG.svg)](https://asciinema.org/a/AmtWJKL9f4Yrg1MKr1BjFw5TG)
+brain-prime. In this game you have to figure out is number prime or not [![asciicast](https://asciinema.org/a/U9yewbTyVv90yceabPZv7KF4d.svg)](https://asciinema.org/a/U9yewbTyVv90yceabPZv7KF4d

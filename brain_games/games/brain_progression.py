@@ -1,10 +1,10 @@
 from random import randint
 
 
-def build_progression(d, num):
+def create_progression(step, num):
     count, result = 0, 0
     lst = []
-    for elem in range(1, d * 10 + 1, d):
+    for elem in range(1, step * 10 + 1, step):
         if count == num:
             lst.append('..')
             result = elem
@@ -19,8 +19,8 @@ def build_progression(d, num):
 
 
 def get_game_progression():
-    d = randint(1, 10)
+    step = randint(1, 10)
     num = randint(1, 10)
-    line, lst, result = build_progression(d, num)
-    line = f"Question: {line}"
-    return line, result
+    line, lst, result = create_progression(step, num)
+    question = f"Question: {line}"
+    return question, result

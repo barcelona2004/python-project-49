@@ -1,6 +1,9 @@
 from random import randint, choice
 
 
+OPERATORS = ['+', '-', '*']
+
+
 def calculate(num1, num2, operator):
     if operator == '*':
         return num1 * num2
@@ -11,10 +14,10 @@ def calculate(num1, num2, operator):
 
 
 def get_game_calc():
-    lst = ['+', '-', '*']
-    random_operator = choice(lst)
+    variants = 'What is the result of the expression?'
+    random_operator = choice(OPERATORS)
     random_num1 = randint(1, 100)
     random_num2 = randint(1, 100)
-    line = f"Question: {random_num1} {random_operator} {random_num2}"
+    question = f"Question: {random_num1} {random_operator} {random_num2}"
     result = calculate(random_num1, random_num2, random_operator)
-    return line, result, random_operator, random_num1, random_num2
+    return question, result, variants

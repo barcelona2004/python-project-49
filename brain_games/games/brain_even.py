@@ -6,10 +6,11 @@ def is_even(num):
 
 
 def get_game_even():
+    variants = 'Answer "yes" if the number is even, otherwise answer "no".'
     random_num = randint(1, 1000)
-    line = f"Question: {random_num}"
+    question = f"Question: {random_num}"
     if is_even(random_num):
         result = 'yes'
     else:
         result = 'no'
-    return line, result, random_num
+    return question, result, variants

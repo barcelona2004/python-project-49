@@ -11,5 +11,5 @@ def is_prime(number):
 def get_game_prime():
     random_num = randint(1, 1000)
     result = is_prime(random_num)
-    line = f"Question: {random_num}"
-    return line, result
+    question = f"Question: {random_num}"
+    return question, result
