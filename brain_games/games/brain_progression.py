@@ -3,8 +3,9 @@ from random import randint
 
 def create_progression(step, num):
     count, result = 0, 0
+    start = randint(1, 100)
     lst = []
-    for elem in range(1, step * 10 + 1, step):
+    for elem in range(start, start + step * 10 + 1, step):
         if count == num:
             lst.append('..')
             result = elem
