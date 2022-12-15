@@ -1,15 +1,14 @@
 import prompt
 
 
-def starter(function):
+def start_game(game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print("Hello, " + name + "!")
-    question_none, result_none, variants = function()
-    print(variants)
+    print(game.RULE)
     count = 0
     for _ in range(3):
-        question, result, variants_none = function()
+        question, result = game.get_game()
         print(question)
         answer = prompt.string('Your answer: ')
         if str(answer) == str(result):
