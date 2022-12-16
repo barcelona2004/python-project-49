@@ -4,7 +4,7 @@ from random import randint
 RULE = 'What number is missing in the progression?'
 
 
-def create_progression(step, num):
+def get_progression_result(step, num):
     count, result = 0, 0
     start = randint(1, 100)
     lst = []
@@ -25,6 +25,6 @@ def create_progression(step, num):
 def get_game():
     step = randint(1, 10)
     num = randint(1, 10)
-    line, lst, result = create_progression(step, num)
+    line, lst, result = get_progression_result(step, num)
     question = f"Question: {line}"
     return question, result
